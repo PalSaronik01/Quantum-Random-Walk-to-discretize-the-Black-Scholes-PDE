@@ -1,0 +1,26 @@
+test_config:
+  pricer:
+    num_path_qubits: 8
+    num_walk_steps: 10
+    n_simulations: 5000
+    verbose: false
+  
+  option:
+    S0: 100.0
+    K: 100.0
+    T: 1.0
+    r: 0.05
+    sigma: 0.2
+  
+  validation:
+    ks_alpha: 0.05
+    error_threshold: 0.10
+    convergence_test: false
+  
+  output:
+    save_results: false
+    results_dir: "./test_results"
+  
+  testing:
+    n_iterations: 3
+    n_convergence_qubits: [6, 8]

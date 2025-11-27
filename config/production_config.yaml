@@ -1,0 +1,30 @@
+production_config:
+  pricer:
+    num_path_qubits: 12
+    num_walk_steps: 20
+    n_simulations: 100000
+    verbose: false
+  
+  option:
+    S0: 100.0
+    K: 100.0
+    T: 1.0
+    r: 0.05
+    sigma: 0.2
+  
+  validation:
+    ks_alpha: 0.05
+    error_threshold: 0.005
+    convergence_test: true
+    n_convergence_qubits: [8, 10, 12, 14]
+  
+  output:
+    save_results: true
+    results_dir: "./production_results"
+    format: ["csv", "json"]
+    backup: true
+  
+  performance:
+    parallel_simulations: true
+    n_workers: 4
+    cache_distributions: true

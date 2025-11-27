@@ -1,0 +1,27 @@
+default_config:
+  # Pricer configuration
+  pricer:
+    num_path_qubits: 12
+    num_walk_steps: 20
+    n_simulations: 50000
+    verbose: true
+  
+  # Option parameters
+  option:
+    S0: 100.0
+    K: 100.0
+    T: 1.0
+    r: 0.05
+    sigma: 0.2
+  
+  # Validation
+  validation:
+    ks_alpha: 0.05
+    error_threshold: 0.01
+    convergence_test: true
+  
+  # Output
+  output:
+    save_results: true
+    results_dir: "./results"
+    format: ["csv", "json"]
