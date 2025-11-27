@@ -23,5 +23,5 @@ A quantum random-walk framework that reproduces Black–Scholes option prices wi
 
 ---
 
-## Repository Structure
+
 
